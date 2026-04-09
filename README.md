@@ -243,3 +243,5 @@ Gaps to reach a production-ready "PDF to JSON app":
   - `.agents/skills/pdftk-server/references/third-party-materials.md`
 
 Review those files before redistribution of skill-derived assets.
+#   p d f - t o - j s o n  
+ 
