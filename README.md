@@ -243,3 +243,68 @@ Gaps to reach a production-ready "PDF to JSON app":
   - `.agents/skills/pdftk-server/references/third-party-materials.md`
 
 Review those files before redistribution of skill-derived assets.
+
+## OCR Moodle PDF to JSON CLI
+
+This repository now includes a standalone OCR parser for Moodle-style quiz review PDFs:
+
+- Script: `ocr_moodle_pdf_to_json.py`
+- Input: all PDFs in `pdf/` by default
+- Output: `<title>/output.json`
+- Target schema: `example.json` (`title` + `questions[]` with `question`, `choices`, `correct`, `points`)
+
+### Install
+
+1. Create and activate a Python virtual environment.
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### OS Prerequisites
+
+The script depends on external binaries for OCR and rendering:
+
+- **Poppler** for `pdf2image` page rendering
+- **Tesseract OCR** for `pytesseract` (first OCR attempt)
+- **EasyOCR** is used as automatic fallback if pytesseract text is weak
+
+On Windows, ensure Poppler and Tesseract are installed and available on your `PATH`.
+
+### Usage
+
+Run from repository root:
+
+```bash
+python ocr_moodle_pdf_to_json.py
+```
+
+Optional flags:
+
+- `--pdf-dir` (default: `pdf`)
+- `--dpi` (default: `300`)
+- `--verbose`
+
+The CLI prompts for a quiz title, creates a sanitized folder with that title, and writes:
+
+- `<title>/output.json`
+
+### Parsing Behavior
+
+- Extracts question text between `Question <n>` and `Select one:`
+- Extracts choices from lines beginning with `a.`, `b.`, `c.`, `d.` (also handles `a)` style)
+- Extracts correct answer text from `The correct answer is: ...`
+- Resolves `correct` by reverse lookup into `choices` (0-based index)
+- Defaults `points` to `1`
+- Deduplicates by normalized question text
+
+### Malformed and OCR-Mismatch Handling
+
+- Malformed questions are included in output (flag behavior by sentinel values):
+  - `correct` is `-1` when answer text is missing or cannot match any choice
+  - Partial or empty `choices` may appear if OCR is incomplete
+- Every malformed or unmatched question is printed to terminal with:
+  - source PDF filename
+  - page number
+  - short question snippet

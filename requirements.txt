@@ -1,0 +1,7 @@
+pdf2image
+pillow
+pytesseract
+easyocr
+numpy
+torch
+torchvision
