@@ -1,0 +1,305 @@
+{
+  "title": "SAM Lec Prelim pt.2 - 3rd Year 2nd Sem",
+  "questions": [
+    {
+      "question": "Which of the following is an example of a Linux operating system?",
+      "choices": ["Mac OS", "Ubuntu OS", "Windows OS", "Chrome OS"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Linux is built around the concept of what system used to store long-term data?",
+      "choices": ["Memory system", "File system", "Network system", "Process system"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which type of Linux file system acts as containers or folders?",
+      "choices": ["Links", "Devices", "Directories", "Ordinary Files"],
+      "correct": 2,
+      "points": 1
+    },
+    {
+      "question": "Which type of Linux file system contains text, data, or program information?",
+      "choices": ["Directories", "Devices", "Ordinary Files", "Links"],
+      "correct": 2,
+      "points": 1
+    },
+    {
+      "question": "Which file system type provides applications access to hardware devices?",
+      "choices": ["Directories", "Links", "Devices", "Ordinary Files"],
+      "correct": 2,
+      "points": 1
+    },
+    {
+      "question": "Which device type transfers data in blocks?",
+      "choices": ["Character devices", "Block devices", "Network devices", "Virtual devices"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which device type transfers data byte-by-byte?",
+      "choices": ["Block devices", "Character devices", "Storage devices", "Disk devices"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "What is a link in Linux?",
+      "choices": ["A directory", "A pointer to another file", "A device driver", "A command"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which type of link is indistinguishable from the file itself?",
+      "choices": ["Soft Link", "Symbolic Link", "Hard Link", "Virtual Link"],
+      "correct": 2,
+      "points": 1
+    },
+    {
+      "question": "Which link provides an indirect pointer or shortcut to a file?",
+      "choices": ["Hard Link", "Soft Link", "Direct Link", "Root Link"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "The Linux command line is also known as what?",
+      "choices": ["Command Prompt", "Shell", "Terminal UI", "DOS"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command shows your current directory path?",
+      "choices": ["pth", "pwd", "fwd", "dir"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command is used to move between directories?",
+      "choices": ["mv", "cd", "rm", "ls"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command deletes an empty directory?",
+      "choices": ["rm", "rmdir", "del", "erase"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command creates a directory?",
+      "choices": ["mkdir", "rmdir", "cd", "rm"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command deletes files or directories with contents?",
+      "choices": ["rm", "rmdir", "del", "erase"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command creates an empty file?",
+      "choices": ["cat", "touch", "cp", "mv"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command copies files?",
+      "choices": ["cp", "mv", "cat", "touch"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command is used for both moving and renaming files?",
+      "choices": ["cp", "mv", "rename", "shift"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command displays file contents?",
+      "choices": ["touch", "cat", "mv", "cp"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command allows running commands with elevated privileges?",
+      "choices": ["su", "sudo", "admin", "root"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command allows continuous superuser access?",
+      "choices": ["sudo", "sudo -i", "su", "admin"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "What does SSH stand for?",
+      "choices": ["Secure Shell", "System Shell", "Safe Host", "Server Host"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which program is the SSH server daemon?",
+      "choices": ["SSH", "SSHD", "FTP", "Telnet"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which protocol is used to transfer files over a network?",
+      "choices": ["SSH", "FTP", "HTTP", "TCP"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which protocol allows remote login via terminal?",
+      "choices": ["FTP", "SSH", "Telnet", "SMTP"],
+      "correct": 2,
+      "points": 1
+    },
+    {
+      "question": "What is the Linux superuser?",
+      "choices": ["Guest", "Root", "Admin", "Operator"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command switches to the root user?",
+      "choices": ["sudo", "su", "root", "admin"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command manages packages in Ubuntu?",
+      "choices": ["systemctl", "apt-get", "chown", "su"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command manages system services?",
+      "choices": ["systemctl", "apt-get", "chown", "sudo"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command changes file ownership?",
+      "choices": ["chmod", "chown", "chgrp", "own"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command changes file permissions?",
+      "choices": ["chmod", "chown", "systemctl", "apt-get"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command creates a new user?",
+      "choices": ["useradd", "userdel", "passwd", "chpasswd"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command deletes a user and their files?",
+      "choices": ["userdel -r", "useradd", "passwd", "chpasswd"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command sets a user password?",
+      "choices": ["passwd", "useradd", "chpasswd", "userdel"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command changes a user password?",
+      "choices": ["passwd", "chpasswd", "useradd", "userdel"],
+      "correct": 1,
+      "points": 1
+    },
+    {
+      "question": "Which command allows switching to another user?",
+      "choices": ["su", "cd", "mv", "ls"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command exits a stuck password prompt?",
+      "choices": ["ctrl c", "ctrl v", "ctrl r", "ctrl p"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command creates a new group?",
+      "choices": ["groupadd", "groupdel", "gpasswd", "grouppasswd"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command deletes a group?",
+      "choices": ["groupdel", "groupadd", "gpasswd", "grouppasswd"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command sets a group password?",
+      "choices": ["gpasswd", "groupadd", "groupdel", "chmod"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command changes a file’s group?",
+      "choices": ["chgrp", "chown", "chmod", "groupadd"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command shows disk usage?",
+      "choices": ["du", "cd", "ls", "pwd"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command searches for .txt files?",
+      "choices": ["find -name \"*.txt\"", "grep txt", "search txt", "locate txt"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command searches for text inside files?",
+      "choices": ["grep", "find", "search", "scan"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command lists directory contents?",
+      "choices": ["ls", "cd", "pwd", "dir"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command shows hidden files?",
+      "choices": ["ls -a", "ls -h", "ls -R", "ls -al"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command shows detailed file info?",
+      "choices": ["ls -al", "ls -a", "ls -R", "ls -h"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which command lists all subdirectory contents?",
+      "choices": ["ls -R", "ls -a", "ls -h", "ls"],
+      "correct": 0,
+      "points": 1
+    },
+    {
+      "question": "Which flag shows file sizes in human-readable format?",
+      "choices": ["-h", "-a", "-R", "-l"],
+      "correct": 0,
+      "points": 1
+    }
+  ]
+}
